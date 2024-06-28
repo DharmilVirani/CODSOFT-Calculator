@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="Calculator.css" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculator</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="subcontainer">
+                <input type="text" id="display" placeholder="0" disabled />
+                <div class="button-section">
+                    <div class="button-container first">
+                        <button class="calc-btn" onclick="square()">x<sup class="small-font"> 2</sup></button>
+                        <button class="calc-btn" onclick="sqrt()">&Sqrt;</button>
+                        <button class="calc-btn" onclick="dividebyone()"><sup>1</sup>/<sub>x</sub></button>
+                        <button class="calc-btn" onclick="cube()">x <sup class="small-font"> 3</sup></button>
+                    </div>
+                    <div class="button-container">
+                        <button class="calc-btn small-font" style="color: chocolate" onclick="display.value=''">
+                            AC
+                        </button>
+                        <button class="calc-btn small-font" style="color: red" onclick="backspace()">CE</button>
+                        <button class="calc-btn small-font" style="color: green" onclick="percentage()">&#37;</button>
+                        <button class="calc-btn btn" style="color: blueviolet">/</button>
+                    </div>
+                    <div class="button-container">
+                        <button class="calc-btn btn">7</button>
+                        <button class="calc-btn btn">8</button>
+                        <button class="calc-btn btn">9</button>
+                        <button class="calc-btn btn" style="color: blueviolet">*</button>
+                    </div>
+                    <div class="button-container">
+                        <button class="calc-btn btn">4</button>
+                        <button class="calc-btn btn">5</button>
+                        <button class="calc-btn btn">6</button>
+                        <button class="calc-btn btn" style="color: blueviolet">+</button>
+                    </div>
+                    <div class="button-container">
+                        <button class="calc-btn btn">1</button>
+                        <button class="calc-btn btn">2</button>
+                        <button class="calc-btn btn">3</button>
+                        <button class="calc-btn btn" style="color: blueviolet">-</button>
+                    </div>
+                    <div class="button-container">
+                        <button class="calc-btn" style="color: blue" onclick="display.value+=3.14159265359">
+                            &pi;
+                        </button>
+                        <button class="calc-btn btn">0</button>
+                        <button class="calc-btn btn">.</button>
+                        <button class="calc-btn" style="color: darkorange" onclick="display.value=eval(display.value)">
+                            =
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="Calculator.js"></script>
+    </body>
+</html>
